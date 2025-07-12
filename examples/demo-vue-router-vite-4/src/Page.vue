@@ -1,6 +1,6 @@
 <script setup>
-import { useRouteQuery } from 'awesome-router-lib'
-const query = useRouteQuery()
+import { useRouteQuery } from "../libs/admin/index.js";
+const query = useRouteQuery();
 </script>
 
 <template>
