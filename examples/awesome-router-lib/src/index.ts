@@ -1,5 +1,6 @@
-import { computed } from 'vue';
+import { computed } from 'vue-demi';
 import { useRoute, useRouter } from 'vue-router-demi'
+
 
 export function useRouteQuery() {
   const route = useRoute()
