@@ -1,18 +1,13 @@
-import Vue, { h } from 'vue'
-import VueRouter from 'vue-router'
-import App from './App.vue'
-import Page from './Page.vue'
+import Vue, { h } from "vue";
+import App from "./App.vue";
+import router from "./router/index.js";
+import plugin from "../libs/admin/index.js";
 
-Vue.use(VueRouter)
-
-const router = new VueRouter({
-  routes: [{ path: '/', component: Page }]
-})
+Vue.use(plugin, { router: router });
 
 const app = new Vue({
   router,
   render: () => h(App),
-})
+});
 
-app.$mount('#app')
-
+app.$mount("#app");

@@ -4,7 +4,7 @@ import resolve from "@rollup/plugin-node-resolve";
 export default {
   input: "src/index.ts",
   output: {
-    dir: "dist/admin/cjs",
+    dir: "dist/cjs/admin/",
     format: "cjs",
   },
   external: ["vue-demi", "vue-router-demi"],
@@ -12,7 +12,7 @@ export default {
     resolve(),
     typescript({
       declaration: false,
-      outDir: "dist/admin/cjs",
+      outDir: "dist/cjs/admin/",
       target: "es2015",
     }),
   ],
